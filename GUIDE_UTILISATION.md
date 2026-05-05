@@ -1,4 +1,4 @@
-﻿# Guide d'utilisation detaille
+# Guide d'utilisation detaille
 
 Ce document explique comment installer, ouvrir et utiliser le projet d'automatisation et d'analyse des ventes.
 
@@ -179,10 +179,10 @@ exports/
 
 `ventes.csv` contient les donnees sources.
 
-`resultats_final.csv` contient les colonnes calculees :
+`resultats_final.csv` contient les colonnes d'origine et les colonnes calculees :
 
 ```csv
-ID,CA_Brut,Montant_Remise,CA_Net,TVA_20,Total_TTC
+ID,Prix,Quantite,Remise,CA_Brut,Montant_Remise,CA_Net,TVA_20,Total_TTC
 ```
 
 Les fichiers PNG sont les graphiques exportes.

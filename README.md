@@ -1,4 +1,4 @@
-﻿# Automatisation et analyse des ventes
+# Automatisation et analyse des ventes
 
 Application Python permettant d'automatiser l'analyse de ventes e-commerce a partir d'un fichier CSV, de calculer les indicateurs financiers, d'afficher un dashboard Streamlit et d'exporter les resultats.
 
@@ -147,7 +147,7 @@ Le projet calcule aussi :
 Les fichiers de sortie sont regroupes dans le dossier `exports` :
 
 - `exports/ventes.csv` : donnees sources generees ou saisies.
-- `exports/resultats_final.csv` : resultats avec les colonnes calculees.
+- `exports/resultats_final.csv` : resultats avec les colonnes d'origine et les colonnes calculees.
 - `exports/ca_par_produit_barres.png` : graphique en barres horizontales.
 - `exports/ca_par_produit_rectangles.png` : graphique en rectangles.
 - `exports/ca_par_produit_cylindres.png` : graphique en cylindres.

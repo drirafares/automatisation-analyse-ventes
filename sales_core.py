@@ -15,14 +15,8 @@ COLONNES_RESULTATS = [
     "TVA_20",
     "Total_TTC",
 ]
-COLONNES_EXPORT_RESULTATS = [
-    "ID",
-    "CA_Brut",
-    "Montant_Remise",
-    "CA_Net",
-    "TVA_20",
-    "Total_TTC",
-]
+COLONNES_EXPORT_RESULTATS = COLONNES_RESULTATS
+
 DOSSIER_EXPORTS = Path("exports")
 FICHIER_VENTES = DOSSIER_EXPORTS / "ventes.csv"
 FICHIER_RESULTATS = DOSSIER_EXPORTS / "resultats_final.csv"
