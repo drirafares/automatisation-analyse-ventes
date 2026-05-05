@@ -169,7 +169,7 @@ Un guide complet est disponible dans [GUIDE_UTILISATION.md](GUIDE_UTILISATION.md
 ## 🧠 Auteurs
 
 ### 👤 mhomed maymoun aouay
-![mhomed maymoun aouay] <img width="720" height="720" alt="470533734_122106714482680932_3683554923486708182_n" src="https://github.com/user-attachments/assets/dd1d0a29-f315-44ff-8b15-19ef4d3ee61d" />
+![mhomed maymoun aouay] <img width="500" height="500" alt="470533734_122106714482680932_3683554923486708182_n" src="https://github.com/user-attachments/assets/dd1d0a29-f315-44ff-8b15-19ef4d3ee61d" />
 
 
   
@@ -177,8 +177,8 @@ Un guide complet est disponible dans [GUIDE_UTILISATION.md](GUIDE_UTILISATION.md
 ---
 
 ### 👤 amine gdaiem 
-![amine gdaiem ] <img width="1391" height="1413" alt="e5658a6a-98b8-4cc3-b1b3-ffca180c982c" src="https://github.com/user-attachments/assets/4ed62c38-c110-412a-a017-affc963bdacf" />
+![amine gdaiem ] <img width="500" height="500" alt="e5658a6a-98b8-4cc3-b1b3-ffca180c982c" src="https://github.com/user-attachments/assets/4ed62c38-c110-412a-a017-affc963bdacf" />
 
 
 ### 👤 fers drira
-![fers drira] <img width="959" height="960" alt="8ca34b6d-95a4-4e32-aff4-777099cdebb4" src="https://github.com/user-attachments/assets/5dc58baf-ef96-46e3-804b-a0e58e62d5b4" />
+![fers drira] <img width="500" height="500" alt="8ca34b6d-95a4-4e32-aff4-777099cdebb4" src="https://github.com/user-attachments/assets/5dc58baf-ef96-46e3-804b-a0e58e62d5b4" />
