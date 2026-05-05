@@ -1,5 +1,6 @@
+📊 Projet d’Analyse de Ventes
 
-https://github.com/drirafares/automatisation-analyse-ventes.git
+🔗 Dépôt GitHub : https://github.com/drirafares/automatisation-analyse-ventes.git
 
 # Automatisation et analyse des ventes
 
@@ -15,7 +16,7 @@ Le projet remplace un traitement manuel dans Excel par un workflow automatise :
 4. Afficher les KPI et les graphiques dans un dashboard.
 5. Exporter les fichiers CSV et les graphiques PNG.
 
-## Fonctionnalites
+## 🚀 Fonctionnalités
 
 - Generation automatique de donnees de ventes.
 - Import d'un fichier CSV.
@@ -36,7 +37,7 @@ Le projet remplace un traitement manuel dans Excel par un workflow automatise :
 - Matplotlib
 - Streamlit
 
-## Structure du projet
+## 📁 Structure du projet
 
 ```text
 automatisation-analyse-ventes/
@@ -83,7 +84,7 @@ Installer les dependances :
 pip install -r requirements.txt
 ```
 
-## Lancer le dashboard
+## ## 🌐  Dashboard Streamlit
 
 Executer l'application Streamlit :
 
@@ -97,7 +98,7 @@ Ouvrir ensuite le lien affiche dans le terminal, generalement :
 http://localhost:8501
 ```
 
-## Lancer le mode terminal
+## 🖥️  Mode Terminal
 
 Le projet peut aussi etre utilise sans interface web :
 
