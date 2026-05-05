@@ -323,7 +323,7 @@ def afficher_sidebar():
             nb_ventes = st.number_input(
                 "Nombre de ventes a analyser",
                 min_value=0,
-                value=100,
+                value=0,
                 step=1,
                 disabled=source != "Generer des donnees",
                 key="nb_ventes_generation",
@@ -331,7 +331,7 @@ def afficher_sidebar():
             nb_produits = st.number_input(
                 "Nombre de produits",
                 min_value=0,
-                value=20,
+                value=0,
                 step=1,
                 disabled=source != "Generer des donnees",
                 key="nb_produits_generation",
