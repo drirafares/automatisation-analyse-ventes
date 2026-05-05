@@ -84,7 +84,7 @@ Installer les dependances :
 pip install -r requirements.txt
 ```
 
-## ## 🌐  Dashboard Streamlit
+## 🌐  Dashboard Streamlit
 
 Executer l'application Streamlit :
 
