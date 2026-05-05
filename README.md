@@ -1,3 +1,6 @@
+
+https://github.com/drirafares/automatisation-analyse-ventes.git
+
 # Automatisation et analyse des ventes
 
 Application Python permettant d'automatiser l'analyse de ventes e-commerce a partir d'un fichier CSV, de calculer les indicateurs financiers, d'afficher un dashboard Streamlit et d'exporter les resultats.
