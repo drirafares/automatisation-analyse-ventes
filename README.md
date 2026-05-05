@@ -163,3 +163,9 @@ Les fichiers de sortie sont regroupes dans le dossier `exports` :
 ## Documentation detaillee
 
 Un guide complet est disponible dans [GUIDE_UTILISATION.md](GUIDE_UTILISATION.md). Il explique comment ouvrir le projet, utiliser chaque mode, importer un CSV et comprendre les resultats.
+
+## Auteurs
+
+- Mohamed Maymoun Aouay
+- Amine Gdaiem
+- Fares Drira
