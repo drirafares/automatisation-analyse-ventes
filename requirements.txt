@@ -1,4 +1,4 @@
-pandas
-numpy
-matplotlib
-streamlit
+pandas==3.0.2
+numpy==2.4.4
+matplotlib==3.10.8
+streamlit==1.57.0

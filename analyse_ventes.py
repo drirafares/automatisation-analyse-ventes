@@ -107,10 +107,16 @@ def enregistrer_meta_terminal(resultats, nb_produits_saisi=None):
     )
 
 
+def trier_resultats_par_ca_brut(resultats):
+    if resultats.empty or "CA_Brut" not in resultats.columns:
+        return resultats
+    return resultats.sort_values(by="CA_Brut", ascending=False).reset_index(drop=True)
+
+
 def exporter_analyse(df, enregistrer_exports=True, nb_produits_saisi=None):
     if enregistrer_exports:
         supprimer_anciens_exports()
-    resultats = calculer_resultats(df)
+    resultats = trier_resultats_par_ca_brut(calculer_resultats(df))
     resume = resumer_ventes(resultats)
     if enregistrer_exports:
         exporter_csv(resultats[COLONNES_SOURCE], FICHIER_VENTES)
@@ -164,8 +170,17 @@ def afficher_resume_terminal(resultats, resume):
     print(f"TVA totale : {resume['tva_total']:.2f}")
     print(f"Total TTC : {resume['total_ttc']:.2f}")
     print(f"Panier moyen TTC : {resume['panier_moyen']:.2f}")
-    print(f"Produit avec le plus gros CA net : {resume['produit_top'] or '-'}")
-    print(f"CA net du produit top : {resume['ca_top']:.2f}")
+    if resume["produit_top"] is None:
+        print("Produit avec le plus gros CA net : -")
+    else:
+        print(f"Produit avec le plus gros CA net : ID {resume['produit_top']}")
+        print(f"CA net total du produit top : {resume['ca_top']:.2f}")
+        print(f"CA brut total du produit top : {resume['ca_brut_top']:.2f}")
+    if resume["produit_top_brut"] is None:
+        print("Produit avec le plus gros CA brut : -")
+    else:
+        print(f"Produit avec le plus gros CA brut : ID {resume['produit_top_brut']}")
+        print(f"CA brut le plus eleve : {resume['ca_top_brut']:.2f}")
 
     print("\nResultats avec ID et colonnes calculees :")
     if resultats.empty:
@@ -552,7 +567,7 @@ def interface_streamlit():
             return
 
         if lecture_exports:
-            resultats = calculer_resultats(df)
+            resultats = trier_resultats_par_ca_brut(calculer_resultats(df))
             resume = resumer_ventes(resultats)
             resume = appliquer_compteurs_terminal(resume, resultats)
         else:

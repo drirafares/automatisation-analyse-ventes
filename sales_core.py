@@ -124,6 +124,9 @@ def resumer_ventes(df):
             "total_ttc": 0.0,
             "produit_top": None,
             "ca_top": 0.0,
+            "ca_brut_top": 0.0,
+            "produit_top_brut": None,
+            "ca_top_brut": 0.0,
             "nb_ventes": 0,
             "nb_produits": 0,
             "quantite_totale": 0,
@@ -135,6 +138,10 @@ def resumer_ventes(df):
     ca_par_produit = df.groupby("ID")["CA_Net"].sum().sort_values(ascending=False)
     produit_top = int(ca_par_produit.index[0])
     ca_top = float(ca_par_produit.iloc[0])
+    ca_brut_top = float(df.loc[df["ID"] == produit_top, "CA_Brut"].sum())
+    index_top_brut = df["CA_Brut"].idxmax()
+    produit_top_brut = int(df.loc[index_top_brut, "ID"])
+    ca_top_brut = float(df.loc[index_top_brut, "CA_Brut"])
     quantite_totale = int(df["Quantite"].sum())
     remise_moyenne = float(df["Remise"].mean())
     panier_moyen = float(df["Total_TTC"].mean())
@@ -145,6 +152,9 @@ def resumer_ventes(df):
         "total_ttc": float(df["Total_TTC"].sum()),
         "produit_top": produit_top,
         "ca_top": ca_top,
+        "ca_brut_top": ca_brut_top,
+        "produit_top_brut": produit_top_brut,
+        "ca_top_brut": ca_top_brut,
         "nb_ventes": int(len(df)),
         "nb_produits": int(df["ID"].nunique()),
         "quantite_totale": quantite_totale,
